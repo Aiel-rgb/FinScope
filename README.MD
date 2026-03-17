@@ -23,7 +23,7 @@ Projeto de análise exploratória de ações brasileiras (B3) e americanas (NYSE
 Análise da distribuição dos ativos entre **B3** e **NYSE/NASDAQ** e entre os setores **Tecnologia** e **Financeiro**.
 
 ![Distribuição de tickers por mercado e setor](IMG/Distribuicao_tickers.png)
-### Insights:
+#### Insights:
 O dataset é composto por 29 ativos distribuídos entre NYSE/NASDAQ (18) e B3 (11), com leve predominância do mercado americano. Por setor, Tecnologia lidera com 15 ativos contra 14 do Financeiro — distribuição equilibrada que permite comparações justas entre os dois setores
 ---
 
@@ -32,7 +32,7 @@ O dataset é composto por 29 ativos distribuídos entre NYSE/NASDAQ (18) e B3 (1
 Análise dos retornos acumulados e médios por mercado, incluindo a comparação entre melhores e piores ativos.
 
 ![Melhores/piores retornos e retorno médio por mercado](IMG/Retornos.png)
-### Insights
+#### Insights
 A B3 superou a NYSE em retorno médio acumulado no período — 37.96% contra 32.78%. Os destaques individuais foram INTC (105%) e AMD (104%), impulsionados pelo boom de semicondutores. No lado brasileiro, Bradesco (93%) e BTG Pactual (89%) lideraram. O pior desempenho foi da Salesforce com -27% de retorno acumulado.
 ---
 
@@ -41,7 +41,7 @@ A B3 superou a NYSE em retorno médio acumulado no período — 37.96% contra 32
 Comparação do retorno acumulado médio entre ativos de **Tecnologia** e **Financeiro** em B3 e NYSE/NASDAQ.
 
 ![Comparação Tech BR x Tech USA](IMG/TechBRXTechUSA.png)
-### Insights
+#### Insights
 O setor Financeiro brasileiro liderou com retorno médio de 55.88%, impulsionado pela alta SELIC que favorece diretamente a rentabilidade dos bancos. Nos EUA, o setor de Tecnologia dominou com 40.25%, puxado por gigantes como NVIDIA e AMD. A maior diferença observada foi entre Tech BR (16.46%) e Tech USA (40.25%) — empresas tecnológicas brasileiras ainda são menos maduras e capitalizadas que suas concorrentes americanas, resultando em retornos significativamente menores. Conclusão: Brasil venceu no Financeiro, EUA venceu na Tecnologia.
 ---
 
@@ -50,8 +50,8 @@ O setor Financeiro brasileiro liderou com retorno médio de 55.88%, impulsionado
 Ranking dos ativos por nível de volatilidade anual, categorizando-os em diferentes faixas de risco.
 
 ![Volatilidade anual dos ativos](IMG/Volatilidade.png)
-### Insight
-A volatilidade é uma forma de medir ou indicar a frenquencia das oscilações de preços, sabendo disso, o mercado que se destacou com essa volatilidade anual média, foi dos dois mercados, tanto brasileiro com 36.38% quanto estadunidense com 36.33%, ambos na faixa de alta volatilidade (30-50%), logo são os que mais oscilaram. Vendo o gráfico com os ativos, é notorio perceber que o ativo da Méliuz(CASH3.SA) esta com 75.17% de sua volatilidade,logo amostrando o pior cenário do investidor vendo seu patrimonio oscilar até 75% em um ano, um risco extremamente alto. E um dos mais estaveis foi do ITAU(ITUB4.SA) com 27% dentro da faixa moderada. O cruzamento mais relevante foi da TechBR concentrou a maior volatilidade do dataset com menor retorno - mais risco para menos resultado comparado à Tech americana
+#### Insight
+A volatilidade é uma forma de medir ou indicar a frenquência das oscilações de preços, sabendo disso, o mercado que se destacou com essa volatilidade anual média, foi dos dois mercados, tanto brasileiro com 36.38% quanto estadunidense com 36.33%, ambos na faixa de alta volatilidade (30-50%), logo são os que mais oscilaram. Vendo o gráfico com os ativos, é notorio perceber que o ativo da Méliuz(CASH3.SA) esta com 75.17% de sua volatilidade,logo mostrando o pior cenário do investidor vendo seu patrimonio oscilar até 75% em um ano, um risco extremamente alto. E um dos mais estaveis foi do ITAU(ITUB4.SA) com 27% dentro da faixa moderada. O cruzamento mais relevante foi da Tech BR concentrou a maior volatilidade do dataset com menor retorno - mais risco para menos resultado comparado à Tech americana
 ---
 
 ## 5. Classificação por risco (volatilidade)
@@ -59,7 +59,8 @@ A volatilidade é uma forma de medir ou indicar a frenquencia das oscilações d
 Comparação dos ativos agrupados por faixas de risco / volatilidade.
 
 ![Ativos por faixa de risco](IMG/ativos_por_risco.png)
-
+#### Insight
+O Sharpe Ratio mede a eficiência de um ativo — o quanto de retorno ele entregou por unidade de risco assumido. A B3 se destacou com Sharpe médio de 1.16 contra 0.82 da NYSE, indicando que o mercado brasileiro recompensou melhor o risco no período. O grande destaque foi o Bradesco (BBDC4.SA) com Sharpe de 2.53 — considerado excelente, pois entregou alto retorno (93%) com volatilidade controlada, sendo o ativo mais eficiente do dataset. No extremo oposto, a Salesforce (CRM) registrou o pior Sharpe (-0.741) — além de cair 27%, ainda apresentou alta volatilidade, caracterizando o pior perfil risco-retorno da análise. O cruzamento mais relevante: Bradesco aparece consistentemente no topo em retorno, Sharpe e drawdown — confirmando ser o ativo mais equilibrado e eficiente do período analisado.
 ---
 
 ## 6. Liquidez: ativos líquidos x menos negociados
@@ -75,7 +76,8 @@ Análise do volume médio diário negociado para identificar ativos mais líquid
 Análise da maior queda que cada ativo sofreu do pico até o ponto mais baixo (drawdown máximo).
 
 ![Drawdown máximo dos ativos](IMG/drawdown.png)
-
+#### Insight
+A B3 registrou drawdown médio mais severo que a NYSE (-26.40% vs -24.81%). O ativo que mais sofreu foi a Méliuz (CASH3.SA) com -68.43% — combinado à sua alta volatilidade de 75%, representa o perfil de maior risco do dataset. Paradoxalmente, a B3 também abrigou os ativos mais resistentes — Bradesco (-10.08%), BTG Pactual (-10.22%) e Itaú (-13.01%) sofreram menos que qualquer ativo americano, demonstrando que o mercado brasileiro concentrou tanto os extremos de risco quanto de resiliência.
 ---
 
 ## 8. Beta vs S&P500
